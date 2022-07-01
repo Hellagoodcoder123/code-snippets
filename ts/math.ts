@@ -6,6 +6,9 @@ var math = {
   isPrime:function(check:number){return !(math.divisibleBy(check,2)||math.divisibleBy(check,3)||math.divisibleBy(check,5)||math.divisibleBy(check,7))},
   isSquare:function(check:number){return Math.sqrt(check)==math.floor(Math.sqrt(check))},
   nextSquare:function(sqn:number){if(math.isSquare(check)){return check+(Math.sqrt(check)*2)-1}},
-  isPositive:function(check:number){return math.abs(check)==check}
+  isPositive:function(check:number){return math.abs(check)==check},
+  PI:3.141592653589793,
+  E:2.718281828459045,
+  acos:function(x:number){if(x<=1&&x>=-1){return math.abs(x-1)*math.PI}}
 }
 export {math}
